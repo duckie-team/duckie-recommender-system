@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/recommendation.png" width="15%" alt="duck" />
+  <img src="./assets/recommendation.png" width="21.56%" alt="duck" />
 </p>
 <h1 align="center">duckie-recommender-sysytem</h1>
 <h5 align="center"><a href="https://github.com/sungbinland/duckie">덕키</a> 추천 시스템</h5>
