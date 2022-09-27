@@ -276,6 +276,9 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
+.DS_Store
+recommender_system/.DS_Store
+
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm
 
 # Backend
