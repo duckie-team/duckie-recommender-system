@@ -1,0 +1,4 @@
+# Python Version : 3.10
+fastapi
+uvicorn[standard]
+firebase_admin
