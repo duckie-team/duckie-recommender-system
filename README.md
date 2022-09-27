@@ -20,3 +20,4 @@ duckie-recommender-system is the recommended system used in [duckie](https://git
 ### Articles
 
 ### Documents
+[QUICK_START.md](https://github.com/sungbinland/duckie-recommender-system/blob/main/QUICK_START.md) : If you want QUICK_START, please check this document. 
