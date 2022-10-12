@@ -1,6 +1,6 @@
 # Import Library
 from typing import Optional, List
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from sqlalchemy import Column, VARCHAR, BOOLEAN, TEXT, INT, DATETIME
 
 
