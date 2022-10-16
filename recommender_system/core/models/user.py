@@ -1,7 +1,7 @@
 # Import Library
 from typing import Optional, List
 from pydantic import BaseModel
-from sqlalchemy import Column, VARCHAR, BOOLEAN, INT, DATETIME, String
+from sqlalchemy import Column, VARCHAR, BOOLEAN, DATETIME, String
 
 
 class User(BaseModel):
