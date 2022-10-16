@@ -20,6 +20,7 @@ class User(BaseModel):
     @:param
     nick_name: 닉네임
     account_enable: 계정 사용 가능 여부
+    profile_url: 유저 프로필 이미지 url
     badges: 유저가 획득한 뱃지 번호
     like_category: 좋아하는 분야
     notification_tags: 
@@ -30,6 +31,7 @@ class User(BaseModel):
     """
     nick_name: Column(VARCHAR(10), primary_key=True, autoincrement=True)
     account_enabled: Column(BOOLEAN)
+    profile_url: Column(TEXT)
     like_category: Category
     badges: List = [Column(int)]
     interested_tags: List = [Column(TEXT)]
