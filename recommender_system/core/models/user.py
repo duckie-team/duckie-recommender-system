@@ -1,7 +1,7 @@
 # Import Library
 from typing import Optional, List
 from pydantic import BaseModel
-from sqlalchemy import Column, VARCHAR, BOOLEAN, DATETIME, String
+from sqlalchemy import Column, VARCHAR, BOOLEAN, INT, DATETIME, String
 
 
 class User(BaseModel):
@@ -23,6 +23,7 @@ class User(BaseModel):
     profile_url: 유저 프로필 이미지 url
     badges: 유저가 획득한 뱃지 번호
     like_category: 좋아하는 분야
+    tier: 덕티어
     interested_tags: 관심있는 태그
     non_interested_tags: 관심없는 태그
     trade_preference_tags: 거래하고 싶은 태그
@@ -34,14 +35,15 @@ class User(BaseModel):
     """
     nick_name: Column(VARCHAR(10), primary_key=True, autoincrement=True)
     account_enabled: Column(BOOLEAN)
-    profile_url: Column(String)
+    profile_url: Column(Column(String))
     like_category: Category
-    badges: List = [Column(int)]
-    interested_tags: List = [Column(String)]
-    non_interested_tags: List = [Column(String)]
-    trade_preference_tags: List = [Column(String)]
-    notification_tags: List = [Column(String)]
-    collections: List = [Column(String)]
+    tier: Column(INT)
+    badges: List[Column(INT)]
+    interested_tags: List[Column(String)]
+    non_interested_tags: List[Column(String)]
+    trade_preference_tags: List[Column(String)]
+    notification_tags: List[Column(String)]
+    collections: List[Column(String)]
     create_at: Column(DATETIME)
     delete_at: Optional[Column(DATETIME)]
     banned_at: Optional[Column(DATETIME)]
