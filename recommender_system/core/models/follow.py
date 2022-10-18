@@ -16,6 +16,6 @@ class Follow(BaseModel):
     blocks: account_id가 차단한 유저들 id 
     """
     account_id: Column(User.nick_name, primary_key=True)
-    followings: List = Optional[Column(User.nick_name)]
-    followers: List = Optional[Column(User.nick_name)]
-    blocks: List = Optional[Column(User.nick_name)]
+    followings: Optional[List[Column(User.nick_name)]]
+    followers: Optional[List[Column(User.nick_name)]]
+    blocks: Optional[List[Column(User.nick_name)]]
