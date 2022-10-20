@@ -1,6 +1,8 @@
 # Import Library
 from pydantic import BaseModel
 from sqlalchemy import Column, String
+from core.models.user import User
+from core.models.feed import Feed
 
 
 class FHeart(BaseModel):
@@ -11,5 +13,5 @@ class FHeart(BaseModel):
     feed_id: 피드 id
     user_id: 유저 id
     """
-    feed_id: Column(String)
-    user_id: Column(String)
+    feed_id: Column(Feed.id)
+    user_id: Column(User.nick_name)
