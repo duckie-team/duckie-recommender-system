@@ -15,6 +15,12 @@ class Category:
 
 
 class ContentMessage(BaseModel):
+    """
+    @param
+    text: 글
+    images: 이미지들 url
+    video: 영상 url
+    """
     text: Column(String)
     images: Optional[List[Column(String)]]
     video: Optional[Column(String)]
