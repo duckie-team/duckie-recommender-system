@@ -29,3 +29,23 @@ class ContentMessage(BaseModel):
 class FeedType:
     duck_deal: Column(INT=0, message="덕딜")
     duck_feed: Column(INT=1, message="덕피드")
+
+
+class Score:
+    """
+    @:param
+    came_feed: 피드 떴을 때
+    read: 피드 클릭 안하고 그냥 읽었을 때
+    carefully_read: 피드를 클릭해서 자세히 읽었을 때
+    heart: 좋아요 눌렀을 때
+    write_comment: 댓글을 작성했을 때
+    share: 공유 했을 때
+    no_interest: 관심 없음
+    """
+    came_feed = 0
+    read = 1
+    carefully_read = 2
+    heart = 3
+    write_comment = 5
+    share = 5
+    no_interest = -3
