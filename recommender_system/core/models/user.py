@@ -40,10 +40,10 @@ class User(BaseModel):
     tier: Column(INT)
     badges: List[Column(INT)]
     interested_tags: List[Column(String)]
-    non_interested_tags: List[Column(String)]
-    trade_preference_tags: List[Column(String)]
-    notification_tags: List[Column(String)]
-    collections: List[Column(String)]
+    non_interested_tags: Optional[List[Column(String)]]
+    trade_preference_tags: Optional[List[Column(String)]]
+    notification_tags: Optional[List[Column(String)]]
+    collections: Optional[List[Column(String)]]
     create_at: Column(DATETIME)
     delete_at: Optional[Column(DATETIME)]
     banned_at: Optional[Column(DATETIME)]
