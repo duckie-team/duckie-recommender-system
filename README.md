@@ -20,4 +20,5 @@ duckie-recommender-system is the recommended system used in [duckie](https://git
 ### Articles
 
 ### Documents
-[QUICK_START.md](https://github.com/sungbinland/duckie-recommender-system/blob/main/QUICK_START.md) : If you want QUICK_START, please check this document. 
+[QUICK_START.md](https://github.com/sungbinland/duckie-recommender-system/blob/main/QUICK_START.md) : If you want QUICK_START, please check this document.  
+[ERD Cloud](https://www.erdcloud.com/d/onmakGcXeNnB4w8s7) : If you want view ERD, please check this document.
