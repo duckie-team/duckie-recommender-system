@@ -10,8 +10,8 @@ class FHeart(BaseModel):
 
     """
     @:param
-    feed_id: 피드 id
+    target_id: 피드 id
     user_id: 유저 id
     """
-    feed_id: Column(Feed.id)
+    target_id: Column(Feed.id)
     user_id: Column(User.nick_name)

@@ -10,9 +10,11 @@ from utils.recommend import *
 router = APIRouter()
 print("hello")
 
+
 @router.get("/")
 async def hello():
     return JSONResponse("hello")
+
 
 @router.get("/recommend", status_code=status.HTTP_200_OK, tags=["recommendation"])
 async def recommender(request: Request):
