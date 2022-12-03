@@ -16,7 +16,7 @@ async def hello():
     return JSONResponse("hello")
 
 
-@router.get("/recommend", status_code=status.HTTP_200_OK, tags=["recommendation"])
+@router.post("/recommend", status_code=status.HTTP_200_OK, tags=["recommendation"])
 async def recommender(request: Request):
     req_json = await request.json()
     return JSONResponse("hello")
