@@ -117,6 +117,14 @@ fabric.properties
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
+recommender_system/__pycache__
+recommender_system/apps/__pycache__
+recommender_system/config/__pycache__
+recommender_system/core/__pycache__
+recommender_system/core/models/__pycache__
+recommender_system/core/schemas/__pycache__
+recommender_system/utils/__pycache__
+
 *.py[cod]
 *$py.class
 
@@ -282,4 +290,5 @@ recommender_system/.DS_Store
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm
 
 # Backend
-recommender_system/config/
+recommender_system/config/connect.py
+recommender_system/config/duckie-rds.json
